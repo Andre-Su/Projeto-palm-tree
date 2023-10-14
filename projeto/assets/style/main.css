@@ -83,17 +83,45 @@ h1 {
     display: inline-flex;
     padding: 15px;
 }
+.destak{
+
+    padding: 0 20px 0 20px;
+}
 #btnleft{
+    background-color: rgba(255, 216, 165, 0.5);
     align-self: center;
     float: left;
+    border-radius: 10px;
+    padding: 3px;
     margin-right: 5px;
-
 }
-.destaktxt{
-    float: inline-end;
-}
-.destakimg{
+#btnright{
+    background-color: rgba(255, 216, 165, 0.5);
+    rotate: 180deg;
+    align-self: center;
     float: right;
+    border-radius: 10px;
+    padding: 3px;
+    margin-left: 5px;
+}
+.destaqueimg{
+    float: inline-end;
+    aspect-ratio: auto,500/370;
+}
+.destaquetxt{
+    float: inline-end;
+    margin-left: 10px;
+}
+.destak h1{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 50px;
+    padding-bottom: 15px;
+}
+.destak p{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: large;
 }
 
 /* Floats */
