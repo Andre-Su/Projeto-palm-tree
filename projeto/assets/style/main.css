@@ -84,7 +84,9 @@ h1 {
     padding: 15px;
 }
 #btnleft{
+    align-self: center;
     float: left;
+    margin-right: 5px;
 
 }
 .destaktxt{
