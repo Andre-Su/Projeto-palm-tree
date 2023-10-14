@@ -77,7 +77,22 @@ h1 {
 
 /* Em Destaque */
 
+#oprojeto{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: inline-flex;
+    padding: 15px;
+}
+#btnleft{
+    float: left;
 
+}
+.destaktxt{
+    float: inline-end;
+}
+.destakimg{
+    float: right;
+}
 
 /* Floats */
 
