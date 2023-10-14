@@ -38,16 +38,17 @@ body {
 }
 
 .nav {
-    max-width: 100%;
-    display: inline-flex;
     float: inline-end;
+    position: absolute;
+    top: 7px;
+    right: 10em;
     margin-top: 45px;
     margin-right: 15px;
 }
 
 .nav li {
     width: max-content;
-    font-size: 15px;
+    font-size: 1em;
     padding: 0 25px 0 3px;
     float: left;
 }
