@@ -8,7 +8,6 @@ body {
 /* header */
 #masterheader {
     position: static;
-    display: grid;
     align-items: center;
     background-color: rgb(0, 26, 36);
     padding-bottom: 20px;
@@ -81,6 +80,7 @@ h1 {
 /* #Page */
 #page{
     position: relative;
+    top: 0px;
 }
 
 /* Em Destaque */
@@ -92,12 +92,6 @@ h1 {
     margin-left: 5px;
     display: inline-flex;
     padding: 15px;
-}
-.destak{
-
-    float: inline-end;
-    position: relative;
-    padding: 0 20px 0 20px;
 }
 #btnleft{
     background-color: rgba(255, 216, 165, 0.5);
@@ -116,22 +110,32 @@ h1 {
     padding: 3px;
     margin-left: 5px;
 }
-.destaqueimg{
-    aspect-ratio: auto,auto/auto;
-    margin-left: 10px;
-    margin-right: 10px;
+.destak{
+    
+    float: inline-end;
+    position: relative;
+    padding: 0 20px 0 20px;
 }
 .destaquetxt{
+    float: right;
+    padding: 0 20px 0 20px;
     margin-left: 10px;
     margin-right: 10px;
 }
-.destak h1{
+.destaqueimg{
+    aspect-ratio: auto,auto/auto;
+    float: right;
+    padding: 0 20px 0 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.destaquetxt h1{
     padding-left: 40px;
     padding-right: 40px;
     font-size: 50px;
     padding-bottom: 15px;
 }
-.destak p{
+.destaquetxt p{
     padding-left: 40px;
     padding-right: 40px;
     font-size: large;
