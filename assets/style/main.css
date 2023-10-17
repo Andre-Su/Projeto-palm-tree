@@ -2,7 +2,7 @@
 
 body {
     color: aliceblue;
-    background-color: rgb(40, 61, 68);
+    background-color: #283d44;
     font: 100% "Open Sans", Verdana, sans-serif;
 }
 /* header */
@@ -177,16 +177,90 @@ h1 {
 }
 
 #oprojeto{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
     align-items: center;
-    
-    background-color: rgb(70, 70, 70);
 }
 #oprojeto img {
-    align-self: center;
-    padding: 30px;
     aspect-ratio: auto,auto/auto;
-
 }
+
+#containerbarra{
+    background-color: #e6e6e6;
+}
+#barra{
+    background-color: #283d44;
+    height: 70px;
+    width: auto;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+}
+
+#comoajudar{
+    background-color: #e6e6e6;
+    position: relative;
+    align-items: center;
+    width: auto;
+    height: 400px;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+.comoajudartxt{
+    align-self: center;
+    float: left;
+    padding: 30px;
+    margin: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.comoajudartxt h1{
+    font-size: 40px;
+    color: rgb(20, 20, 20);
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.comoajudartxt p{
+    color: rgb(20, 20, 20);
+    font-size: medium;
+    font-weight: 600;
+}
+
+.comoajudarbtn{
+    align-self: center;
+    float: right;
+    display: grid;
+    justify-items: center;
+    padding: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.comoajudarbtn button{
+    background-color: #6e6e6e;
+    color: #ffffff;
+    border: 0px;
+    font-size: larger;
+    height: max-content;
+    width: 350px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+.comoajudarbtn button:hover{
+    transition-duration: 500ms;
+    border-radius: 8px;
+    background-color: #838383;
+    color: #ebebeb;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+#e_carteira
+#doacoes
 
 /* Floats */
 
