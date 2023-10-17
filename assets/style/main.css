@@ -85,13 +85,13 @@ h1 {
 
 /* Em Destaque */
 
-#oprojeto{
+#destque{
     margin-top: 40px;
-    margin-bottom: 40px;
     margin-right: 5px;
     margin-left: 5px;
     display: inline-flex;
     padding: 15px;
+    padding-bottom: 40px;
 }
 #btnleft{
     background-color: rgba(255, 216, 165, 0.5);
@@ -136,14 +136,19 @@ h1 {
     padding-right: 40px;
     font-size: large;
 }
+
 #sobrenos{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-right: 5px;
-    margin-left: 5px;
+    position: relative;
+    background-color: #e6e6e6;
+    color: rgb(0, 57, 95);
     display: inline-flex;
     padding: 15px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
+
 .sobrenostxt{
     float: right;
     padding: 30px;
@@ -160,9 +165,27 @@ h1 {
     width: 40%;
     aspect-ratio: auto,auto/auto;
     float: left;
-    padding: 0 20px 0 20px;
-    margin-left: 10px;
+    padding: 20px;
+    margin-left: 40px;
     margin-right: 10px;
+}
+.sobrenosimg h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+#oprojeto{
+    align-items: center;
+    
+    background-color: rgb(70, 70, 70);
+}
+#oprojeto img {
+    align-self: center;
+    padding: 30px;
+    aspect-ratio: auto,auto/auto;
+
 }
 
 /* Floats */
