@@ -5,6 +5,9 @@ body {
     background-color: #283d44;
     font: 100% "Open Sans", Verdana, sans-serif;
 }
+a {
+    transition-duration: 200ms;
+}
 /* header */
 #masterheader {
     position: static;
@@ -31,8 +34,10 @@ body {
     font-family: Verdana;
     font-weight: 600;
     font-size: 1.4em;
+    transition-duration: 200ms;
 }
 .logo a:hover {
+    transition-duration: 200ms;
     background: transparent;
     color: #bababb;
     text-decoration: none;
@@ -146,6 +151,7 @@ h1 {
     padding-left: 40px;
     padding-right: 40px;
     font-size: large;
+    text-align: justify;
 }
 
 #sobrenos{
