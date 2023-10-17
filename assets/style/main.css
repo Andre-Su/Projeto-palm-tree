@@ -99,7 +99,7 @@ h1 {
     float: left;
     border-radius: 10px;
     padding: 3px;
-    margin-right: 5px;
+    margin-right: px;
 }
 #btnright{
     background-color: rgba(255, 216, 165, 0.5);
@@ -110,19 +110,15 @@ h1 {
     padding: 3px;
     margin-left: 5px;
 }
-.destak{
-    
-    float: inline-end;
-    position: relative;
-    padding: 0 20px 0 20px;
-}
 .destaquetxt{
-    float: right;
-    padding: 0 20px 0 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    float: left;
+    padding: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+
 }
 .destaqueimg{
+    width: 40%;
     aspect-ratio: auto,auto/auto;
     float: right;
     padding: 0 20px 0 20px;
@@ -139,6 +135,34 @@ h1 {
     padding-left: 40px;
     padding-right: 40px;
     font-size: large;
+}
+#sobrenos{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 5px;
+    margin-left: 5px;
+    display: inline-flex;
+    padding: 15px;
+}
+.sobrenostxt{
+    float: right;
+    padding: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.sobrenostxt p{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: large;
+}
+.sobrenosimg{
+    width: 40%;
+    aspect-ratio: auto,auto/auto;
+    float: left;
+    padding: 0 20px 0 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* Floats */
