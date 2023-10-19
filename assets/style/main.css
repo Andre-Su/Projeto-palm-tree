@@ -7,9 +7,24 @@ body {
     cursor: default;
 }
 a {
+    text-decoration: none;
+    color: antiquewhite;
     transition-duration: 200ms;
 }
-/* header */
+a:hover{
+    background: transparent;
+    padding: 2px;
+    color: rgb(255, 190, 105);
+    transition-duration: 200ms;
+    font-weight: bold;
+}
+small{
+    font-weight: 400;
+    font-size: smaller;
+}
+
+/* Header */
+
 #masterheader {
     position: static;
     align-items: center;
@@ -23,6 +38,8 @@ a {
     float: right;
 }
 
+/* Logomarca */
+
 .logo{
     margin-left: 5%;
     margin-top: 45px;
@@ -32,7 +49,7 @@ a {
 .logo a {
     padding: 6px;
     text-decoration: none;
-    color:#ffffff;
+    color: #ffffff;
     font-family: Verdana;
     font-weight: 600;
     font-size: 1.6em;
@@ -40,11 +57,13 @@ a {
 }
 .logo a:hover {
     border-radius: 5px;
+    color:#ffd373;
     transition-duration: 200ms;
-    color: #bababb;
     text-decoration: none;
-    background-color: rgba(2, 18, 24, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
+
+/* Nav bar - links */
 
 .nav {
     float: inline-end;
@@ -73,6 +92,8 @@ a {
 .nav li a:hover{
     color:#ffffff;
     font-weight: 540;
+    padding: 2px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
 }
 
 .nav li:first-child {
@@ -110,30 +131,47 @@ h1 {
     align-self: center;
 }
 #btnleft{
-    background-color: rgba(255, 216, 165, 0.5);
+    background-color: rgba(255, 232, 203, 0.5);
     align-self: center;
     float: left;
-    width: 40px;
-    height: 40px;
     border: 0;
     border-radius: 10px;
     padding: 5px;
+    padding-top: 8px;
     margin-right: 5px;
     margin-left: 5px;
+    transition-duration: 200ms;
 }
 #btnright{
-    background-color: rgba(255, 216, 165, 0.5);
+    background-color: rgba(255, 232, 203, 0.5);
     align-self: center;
-    rotate: 180deg;
     float: right;
-    width: 40px;
-    height: 40px;
     border: 0;
     border-radius: 10px;
     padding: 5px;
+    padding-top: 8px;
     margin-right: 5px;
     margin-left: 5px;
+    transition-duration: 200ms;
 }
+#btnright img{
+    rotate: 180deg;
+
+}
+#btnleft:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 3px 5px 5px rgba(9, 23, 27, 0.8);
+    cursor: pointer;
+    transition-duration: 250ms;
+}
+    
+#btnright:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 3px 5px 5px rgba(9, 23, 27, 0.8);
+    cursor: pointer;
+    transition-duration: 250ms;
+}
+
 .destaquetxt{
     float: left;
     padding: 30px;
@@ -161,6 +199,8 @@ h1 {
     font-size: large;
     text-align: justify;
 }
+
+/* Sobre Nós */
 
 #sobrenos{
     position: relative;
@@ -194,12 +234,17 @@ h1 {
     margin-left: 40px;
     margin-right: 10px;
 }
+.sobrenosimg img:hover{
+    box-shadow: 0 5px 10px rgba(17, 26, 29, 0.8);
+}
 .sobrenosimg h2{
     font-size: 30px;
     font-weight: bold;
     padding-left: 30px;
     padding-bottom: 10px;
 }
+
+/* O Projeto */
 
 #oprojeto{
     max-width: 800px;
@@ -221,6 +266,7 @@ h1 {
     border-bottom-left-radius: 70px;
     border-bottom-right-radius: 70px;
 }
+/* Como Ajudar */
 
 #comoajudar{
     background-color: #e6e6e6;
@@ -278,6 +324,9 @@ h1 {
 }
 .comoajudarbtn button:hover{
     transition-duration: 500ms;
+    padding: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
     border-radius: 8px;
     background-color: #838383;
     color: #ebebeb;
@@ -287,6 +336,8 @@ h1 {
 #e_carteira
 #doacoes
 */
+
+/* Transparência */
 
 #transparencia{
     display: grid;
@@ -310,19 +361,21 @@ h1 {
     background-color: #111a1d;
     float: inline-end;
     margin-right: 30px;
+    margin-left: 30px;
     padding: 10px;
     padding-bottom: 30px;
     border-radius: 5px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     box-shadow: 0 5px 5px rgba(17, 26, 29, 0.8);
+    font-weight: 550;
 }
 .trpcaixa:hover{
     border-radius: 5px;
     box-shadow: 3px 10px 10px rgba(24, 38, 43, 0.8);
     background-color: #19262b;
     color: white;
-    font-weight: 550;
+    font-weight: 650;
 }
 .trpcaixa p{
     margin-top: 15px;
@@ -339,7 +392,87 @@ h1 {
     padding-right: 20px;
 }
 
+#apoiadores{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+#apoiadores div h1{
+    text-align: center;
+}
 
+#imgslider{
+    position: relative;
+    background-color: #09171b;
+    margin: 0 auto;
+    display: flex;
+    height: 100px;
+    width: fit-content;
+    padding: 10px;
+}
+.apoiaimg{
+    margin: 0 20px;
+    align-self: flex-end;
+    float: inline-end;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+/* Footer */
+
+footer{
+    background-color: #09171b;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#ftcontainer{
+    display: flex;
+}
+.ftdiv{
+    align-items: start;
+    padding: 10px;
+    margin-left: 40px;
+}
+
+#mapping{
+    margin-left: 50px;
+    float: left;
+}
+#contato{
+    float: right;
+}
+
+#NL{
+    float: right;
+}
+  #inputNL{
+    margin-top: 10px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0;
+    border-radius: 5px;
+  }
+
+  #submitNL{
+    align-self: center;
+    border: 0;
+    border-radius: 3px;
+    padding: 7px;
+    padding-top: 6px;
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    rotate: 180deg;
+  }
+
+#copynote{
+    text-align: center;
+    margin-top: 30px;
+}
 
 
 /* Floats */
