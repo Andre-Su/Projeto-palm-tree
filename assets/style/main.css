@@ -26,6 +26,8 @@ small{
 /* Header */
 
 #masterheader {
+    display: flex;
+    justify-content: space-between;
     position: static;
     align-items: center;
     background-color: rgb(0, 26, 36);
