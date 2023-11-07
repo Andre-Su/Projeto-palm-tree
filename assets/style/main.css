@@ -424,6 +424,7 @@ h1 {
 /* Footer */
 
 footer{
+    display: grid;
     background-color: #09171b;
     padding: 20px;
     border-top-left-radius: 20px;
@@ -431,46 +432,19 @@ footer{
 }
 
 #ftcontainer{
-    display: flex;
+    display: inline-grid;
 }
-.ftdiv{
-    align-items: start;
+
+
+#mapping{
+    padding: 10px;
+    margin-left: 40px;
+    margin-left: 50px;
+}
+#contato{
     padding: 10px;
     margin-left: 40px;
 }
-
-#mapping{
-    margin-left: 50px;
-    float: left;
-}
-#contato{
-    float: right;
-}
-
-#NL{
-    float: right;
-}
-  #inputNL{
-    margin-top: 10px;
-    height: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border: 0;
-    border-radius: 5px;
-  }
-
-  #submitNL{
-    align-self: center;
-    border: 0;
-    border-radius: 3px;
-    padding: 7px;
-    padding-top: 6px;
-    width: 30px;
-    height: 30px;
-    background-color: orange;
-    rotate: 180deg;
-  }
-
 #copynote{
     text-align: center;
     margin-top: 30px;
