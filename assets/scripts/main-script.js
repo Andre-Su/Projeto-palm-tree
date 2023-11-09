@@ -5,7 +5,9 @@
         const btnLeft = document.getElementById('btnleft');
         const btnRight = document.getElementById('btnright');
 
-        const contentBar = [
+        const contentBar = [{"titulo":"Título de exemplo",
+            "texto":"Esta seção do site é um protótipo que será utilizada em outro momento. Neste espaço, teremos a flexibilidade de incluir conteúdos de destaque que sejam relevantes para nossos visitantes quando o site estiver em pleno funcionamento. <br>Parte dos textos aqui foram gerados por IA, ou seja, podem conter erros e inconsistências com o mundo real.",
+            "imagem":"assets/img/placeholder.png"},
             {"titulo":"Oxigênio",
             "texto":"O oxigênio é um elemento químico de símbolo O, número atómico 8 e com massa atômica 16 u. É um não metal reativo que facilmente forma compostos com a maioria dos outros elementos, principalmente óxidos. Tem a segunda eletronegatividade mais elevada de todos os elementos, superado apenas pelo flúor. O oxigênio é o terceiro mais abundante no universo, atrás do hidrogênio e hélio. Sua importância na respiração aeróbica o torna essencial para a vida na Terra.",
             "imagem":"assets/img/elements/oxigenio.jpg"},
@@ -23,7 +25,25 @@
             "imagem":"assets/img/elements/nitrogenio.jpg"},
             {"titulo":"Fósforo",
             "texto":"O fósforo é um elemento químico com símbolo P, número atômico 15 e massa atômica 31 u. É um sólido que pode ser branco, vermelho ou preto. É essencial para a vida e desempenha um papel importante em moléculas como o DNA e o ATP. O fósforo é utilizado na produção de fertilizantes, na indústria química e na fabricação de fósforos.",
-            "imagem":"assets/img/elements/fosforo.jpg"}
+            "imagem":"assets/img/elements/fosforo.jpg"},
+            {"titulo":"Sódio",
+            "texto":"O sódio é um elemento químico de símbolo Na, número atômico 11 e massa atômica 23 u. É um metal alcalino altamente reativo que é armazenado sob óleo para evitar a reação com o oxigênio. O sódio é amplamente utilizado na indústria para produzir compostos como o hidróxido de sódio e o carbonato de sódio. Além disso, é um eletrólito essencial para o funcionamento adequado do corpo humano.",
+            "imagem":"assets/img/elements/sodio.jpg"},
+            {"titulo":"Cobre",
+            "texto":"O cobre é um elemento químico com símbolo Cu, número atômico 29 e massa atômica 63 u. É um metal de transição que é conhecido por sua excelente condutividade elétrica e térmica. O cobre é amplamente utilizado na fabricação de fios elétricos, tubos de encanamento e moedas. Além disso, desempenha um papel vital no metabolismo humano como parte de várias enzimas.",
+            "imagem":"assets/img/elements/cobre.jpg"},
+            {"titulo":"Cloro",
+            "texto":"O cloro é um elemento químico com símbolo Cl, número atômico 17 e massa atômica 35,5 u. É um não metal altamente reativo que é frequentemente usado na purificação de água e em produtos de limpeza. O cloro é um componente essencial do sal de cozinha (cloreto de sódio) e desempenha um papel fundamental na regulação do equilíbrio iônico no corpo humano.",
+            "imagem":"assets/img/elements/cloro.jpg"},
+            {"titulo":"Magnésio",
+            "texto":"O magnésio é um elemento químico com símbolo Mg, número atômico 12 e massa atômica 24 u. É um metal alcalino-terroso leve que desempenha um papel crucial em muitos processos biológicos, incluindo a contração muscular e a transmissão de impulsos nervosos. O magnésio é encontrado em alimentos como nozes, sementes e vegetais verdes, e é frequentemente usado em ligas metálicas e na indústria aeroespacial.",
+            "imagem":"assets/img/elements/magnesio.jpg"},
+            {"titulo":"Enxofre",
+            "texto":"O enxofre é um elemento químico com símbolo S, número atômico 16 e massa atômica 32 u. É um não metal que desempenha um papel fundamental na formação de proteínas e aminoácidos. O enxofre é encontrado em compostos como sulfetos e sulfatos e é amplamente utilizado na indústria química para a produção de ácido sulfúrico e na fabricação de produtos farmacêuticos.",
+            "imagem":"assets/img/elements/enxofre.jpg"},
+            {"titulo":"Cálcio",
+            "texto":"O cálcio é um elemento químico com símbolo Ca, número atômico 20 e massa atômica 40 u. É um metal alcalino-terroso essencial para a formação e manutenção de ossos e dentes. Além disso, o cálcio desempenha um papel vital na sinalização celular e na coagulação sanguínea. É encontrado em laticínios, vegetais de folhas verdes e suplementos dietéticos.",
+            "imagem":"assets/img/elements/calcio.jpg"}
         ];
 
         const dotcontainer = document.getElementById("dtdots");
@@ -47,7 +67,7 @@
 
         function setConteudo() {
             destaqueTittle.textContent = contentBar[i].titulo;
-            destaqueTxt.textContent = contentBar[i].texto;
+            destaqueTxt.innerHTML = contentBar[i].texto;
             destaqueImg.src = contentBar[i].imagem;
             for(l=0;l<dots.length;l++){dots[l].style.width = "10px";}
             dots[i].style.width = "20px";
