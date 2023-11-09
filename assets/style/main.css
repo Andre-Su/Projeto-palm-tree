@@ -184,6 +184,7 @@ h1 {
 .destaqueimg{
     width: 40%;
     aspect-ratio: auto,auto/auto;
+    
     float: right;
     padding: 0 20px 0 20px;
     margin-left: 10px;
@@ -200,6 +201,21 @@ h1 {
     padding-right: 40px;
     font-size: large;
     text-align: justify;
+}
+#dtdots{
+    display: flex;
+    justify-items: center;
+    background-color: rgba(67, 100, 112, 0.3);
+    border-radius: 5px;
+    height: 25px;
+    padding: 5px 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.dots{
+    
+    margin-left: 10px;
 }
 
 /* Sobre Nós */
@@ -371,6 +387,7 @@ h1 {
     border-bottom-left-radius: 20px;
     box-shadow: 0 5px 5px rgba(17, 26, 29, 0.8);
     font-weight: 550;
+    transition-duration: 200ms;
 }
 .trpcaixa:hover{
     border-radius: 5px;
@@ -378,6 +395,7 @@ h1 {
     background-color: #19262b;
     color: white;
     font-weight: 650;
+    transition-duration: 200ms;
 }
 .trpcaixa p{
     margin-top: 15px;
@@ -406,6 +424,7 @@ h1 {
 #imgslider{
     position: relative;
     background-color: #09171b;
+    align-items: center;
     margin: 0 auto;
     display: flex;
     height: 100px;
@@ -419,12 +438,18 @@ h1 {
     margin-right: 30px;
     margin-left: 30px;
     padding: 10px;
+    transition-duration: 300ms;
+}
+.apoiaimg:hover{
+    padding: 10px 15px;
+    background-color: #0e2329;
+    border-radius: 20px;
+    transition-duration: 300ms;
 }
 
 /* Footer */
 
 footer{
-    display: grid;
     background-color: #09171b;
     padding: 20px;
     border-top-left-radius: 20px;
@@ -432,7 +457,12 @@ footer{
 }
 
 #ftcontainer{
-    display: inline-grid;
+    display: flex;
+}
+.ftdiv{
+    align-items: start;
+    padding: 10px;
+    margin-left: 40px;
 }
 
 
