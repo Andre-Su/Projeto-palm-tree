@@ -205,7 +205,7 @@ h1 {
 #dtdots{
     display: flex;
     justify-items: center;
-    background-color: rgba(67, 100, 112, 0.3);
+    background-color: rgba(67, 100, 112, 0.8);
     border-radius: 5px;
     height: 25px;
     padding: 5px 20px;
