@@ -91,15 +91,15 @@
             destaqueImg.src = contentBar[position].imagem;
             destaqueImg.borderRadius = '20px';
             for(l=0;l<dots.length;l++){
-                dots[l].style.width = "12px";
-                dots[l].style.height = "12px";
+                dots[l].style.width = "15px";
+                dots[l].style.height = "15px";
                 dots[l].style.margin = "0px";
-                dots[l].style.borderRadius = "6px";
+                dots[l].style.borderRadius = "7px";
             }
-            dots[i].style.width = "20px";
-            dots[i].style.height = "20px";
+            dots[i].style.width = "25px";
+            dots[i].style.height = "25px";
             dots[i].style.margin = "0px 20px";
-            dots[i].style.borderRadius = "10px";
+            dots[i].style.borderRadius = "12px";
         }
         setConteudo(i);
 
