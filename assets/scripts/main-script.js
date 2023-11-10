@@ -52,6 +52,7 @@
             var dotItem = document.createElement('img');
             dotItem.src = 'assets/img/dot_black.svg.png';
             dotItem.width = '10px';
+            
             dotItem.className = 'dots';
             dotcontainer.appendChild(dotItem);
         }
@@ -69,30 +70,29 @@
             destaqueTittle.textContent = contentBar[i].titulo;
             destaqueTxt.innerHTML = contentBar[i].texto;
             destaqueImg.src = contentBar[i].imagem;
-            for(l=0;l<dots.length;l++){dots[l].style.width = "10px";}
+            for(l=0;l<dots.length;l++){
+                dots[l].style.width = "10px";
+                dots[l].style.padding = "0px";
+            }
             dots[i].style.width = "20px";
+            dots[i].style.padding = "20px";
+
+            console.log(i);
+            console.log(contentBar[i]);
         }
 
         function voltar() {
-            if (i > 0) {
                 i--;
-            }
-            if (i <= 0) {
-                btnLeft.setAttribute('disabled', true);
-            } else {
-                btnRight.removeAttribute('disabled');
+            if (i < 0) {
+                i = (contentBar.length - 1);
             }
             setConteudo();
         }
 
         function avancar() {
-            if (i < contentBar.length - 1) {
                 i++;
-            }
-            if (i >= contentBar.length - 1) {
-                btnRight.setAttribute('disabled', true);
-            } else {
-                btnLeft.removeAttribute('disabled');
+            if (i >= contentBar.length) {
+                i = 0;
             }
             setConteudo();
         }

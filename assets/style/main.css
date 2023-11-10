@@ -215,7 +215,7 @@ h1 {
     align-items: center;
 }
 .dots{
-    
+    transition-duration: 700ms;
     margin-left: 10px;
 }
 
