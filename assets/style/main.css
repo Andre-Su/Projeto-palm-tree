@@ -54,13 +54,14 @@ small{
     color: #ffffff;
     font-family: Verdana;
     font-weight: 600;
-    font-size: 1.6em;
+    font-size: 1.8em;
     transition-duration: 200ms;
 }
 .logo a:hover {
     border-radius: 5px;
     color:#ffd373;
     transition-duration: 200ms;
+    padding: 6px 15px;
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0.8);
 }
@@ -175,16 +176,17 @@ h1 {
 }
 
 .destaquetxt{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
     float: left;
     padding: 30px;
     margin-left: 20px;
     margin-right: 20px;
-
+    border-radius: 5px;
 }
 .destaqueimg{
     width: 40%;
     aspect-ratio: auto,auto/auto;
-    
+    border-radius: 20px;
     float: right;
     padding: 0 20px 0 20px;
     margin-left: 10px;
@@ -205,18 +207,31 @@ h1 {
 #dtdots{
     display: flex;
     justify-items: center;
-    background-color: rgba(126, 179, 199, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    height: 25px;
+    height: 30px;
     padding: 5px 20px;
+    margin: 0 10px;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
+
 .dots{
+    background-color: #00366b;
+    width: 10px;
+    height: 10px;
+    border-radius: px;
+    border: none;
     transition-duration: 700ms;
     margin-left: 10px;
+}
+.dots:hover{
+    background-color: #006586;
+    padding: 10px;
+    border-radius: 10px;
+    transition-duration: 300ms;
 }
 
 /* Sobre Nós */

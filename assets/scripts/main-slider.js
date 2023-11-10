@@ -47,8 +47,8 @@
             "imagem":"assets/img/elements/calcio.jpg"}
         ];
 
-        /*detectar número
         const r = /\d+/; 
+        /*detectar número
         const pos = (BoxID.match(r));
         //log do número extraído do id do checkbox
         console.log ('riscarTexto() na posição '+pos[0]);
@@ -57,29 +57,30 @@
         const dotcontainer = document.getElementById("dtdots");
 
         for(l = 0;l<contentBar.length;l++){
-            const pos = l;
-            /*
-            var dotLink = document.createElement('a');
-            dotLink.href = contentBar[pos];
-            */
-            var dotItem = document.createElement('img');
-            dotItem.src = 'assets/img/dot_black.svg.png';
-            dotItem.width = '10px';
-
-            dotItem.className = 'dots';
-            dotcontainer.appendChild(dotItem);
-            /*
-            dotcontainer.appendChild(dotLink);
-            dotLink.appendChild(dotItem); 
-            */
            
+            var dotItem = document.createElement('button');
+            dotItem.style.height = '10px';
+            dotItem.style.width = '10px';
+            dotItem.className = 'dots';
+            dotItem.id = 'btdot'+l;
+
+            dotcontainer.appendChild(dotItem);
+
+            dotItem.addEventListener('click', function(event){
+                const botaoid = event.target.id;
+                let pos = botaoid.match(r);
+                avancarPosicao(pos);
+            });
         }
 
-        const dots = document.querySelectorAll('img[class="dots"]');
-
+        const dots = document.querySelectorAll('button[class="dots"]');
+        
         let i = 0;
 
-        setConteudo(i);
+        function avancarPosicao(pos){
+            i = pos;
+            setConteudo(i);
+        }
         
         btnLeft.addEventListener("click", voltar);
         btnRight.addEventListener("click", avancar);
@@ -88,16 +89,19 @@
             destaqueTittle.textContent = contentBar[position].titulo;
             destaqueTxt.innerHTML = contentBar[position].texto;
             destaqueImg.src = contentBar[position].imagem;
+            destaqueImg.borderRadius = '20px';
             for(l=0;l<dots.length;l++){
-                dots[l].style.width = "10px";
-                dots[l].style.padding = "0px";
+                dots[l].style.width = "12px";
+                dots[l].style.height = "12px";
+                dots[l].style.margin = "0px";
+                dots[l].style.borderRadius = "6px";
             }
             dots[i].style.width = "20px";
-            dots[i].style.padding = "20px";
-
-            console.log(i);
-            console.log(contentBar[i]);
+            dots[i].style.height = "20px";
+            dots[i].style.margin = "0px 20px";
+            dots[i].style.borderRadius = "10px";
         }
+        setConteudo(i);
 
         function voltar() {
                 i--;
