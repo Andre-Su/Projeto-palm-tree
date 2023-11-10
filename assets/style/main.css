@@ -392,8 +392,7 @@ h1 {
 }
 .trpcaixa:hover{
     border-radius: 5px;
-    box-shadow: 3px 10px 10px rgba(24, 38, 43, 0.8);
-    background-color: #19262b;
+    box-shadow: 3px 10px 10px rgba(24, 38, 43, 1);
     color: white;
     font-weight: 650;
     transition-duration: 200ms;

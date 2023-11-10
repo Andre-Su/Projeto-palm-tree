@@ -5,7 +5,8 @@
         const btnLeft = document.getElementById('btnleft');
         const btnRight = document.getElementById('btnright');
 
-        const contentBar = [{"titulo":"Título de exemplo",
+        const contentBar = [
+            {"titulo":"Título de exemplo",
             "texto":"Esta seção do site é um protótipo que será utilizada em outro momento. Neste espaço, teremos a flexibilidade de incluir conteúdos de destaque que sejam relevantes para nossos visitantes quando o site estiver em pleno funcionamento. <br>Parte dos textos aqui foram gerados por IA, ou seja, podem conter erros e inconsistências com o mundo real.",
             "imagem":"assets/img/placeholder.png"},
             {"titulo":"Oxigênio",
@@ -46,30 +47,47 @@
             "imagem":"assets/img/elements/calcio.jpg"}
         ];
 
+        /*detectar número
+        const r = /\d+/; 
+        const pos = (BoxID.match(r));
+        //log do número extraído do id do checkbox
+        console.log ('riscarTexto() na posição '+pos[0]);
+        */
+
         const dotcontainer = document.getElementById("dtdots");
 
         for(l = 0;l<contentBar.length;l++){
+            const pos = l;
+            /*
+            var dotLink = document.createElement('a');
+            dotLink.href = contentBar[pos];
+            */
             var dotItem = document.createElement('img');
             dotItem.src = 'assets/img/dot_black.svg.png';
             dotItem.width = '10px';
-            
+
             dotItem.className = 'dots';
             dotcontainer.appendChild(dotItem);
+            /*
+            dotcontainer.appendChild(dotLink);
+            dotLink.appendChild(dotItem); 
+            */
+           
         }
 
         const dots = document.querySelectorAll('img[class="dots"]');
 
         let i = 0;
 
-        setConteudo();
+        setConteudo(i);
         
         btnLeft.addEventListener("click", voltar);
         btnRight.addEventListener("click", avancar);
 
-        function setConteudo() {
-            destaqueTittle.textContent = contentBar[i].titulo;
-            destaqueTxt.innerHTML = contentBar[i].texto;
-            destaqueImg.src = contentBar[i].imagem;
+        function setConteudo(position) {
+            destaqueTittle.textContent = contentBar[position].titulo;
+            destaqueTxt.innerHTML = contentBar[position].texto;
+            destaqueImg.src = contentBar[position].imagem;
             for(l=0;l<dots.length;l++){
                 dots[l].style.width = "10px";
                 dots[l].style.padding = "0px";
@@ -86,7 +104,7 @@
             if (i < 0) {
                 i = (contentBar.length - 1);
             }
-            setConteudo();
+            setConteudo(i);
         }
 
         function avancar() {
@@ -94,5 +112,5 @@
             if (i >= contentBar.length) {
                 i = 0;
             }
-            setConteudo();
+            setConteudo(i);
         }
