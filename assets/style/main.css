@@ -9,13 +9,13 @@ body {
 a {
     text-decoration: none;
     color: antiquewhite;
-    transition-duration: 200ms;
+    transition-duration: 100ms;
 }
 a:hover{
     background: transparent;
     padding: 2px;
     color: rgb(255, 190, 105);
-    transition-duration: 200ms;
+    transition-duration: 100ms;
     font-weight: bold;
 }
 small{
@@ -309,6 +309,19 @@ h1 {
     height: 300px;
     padding: 30px;
     margin-bottom: 10px;
+}
+#comoajudar a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        transition-duration: 200ms;
+    }
+#comoajudar a:hover{
+        background: transparent;
+        color: rgb(255, 255, 255);
+        transition-duration: 200ms;
+        font-weight: normal;
+    
+
 }
 .comoajudartxt{
     align-self: center;
