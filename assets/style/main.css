@@ -228,7 +228,7 @@ h1 {
 }
 .dots:hover{
     background-color: #006586;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
     transition-duration: 200ms;
 }
