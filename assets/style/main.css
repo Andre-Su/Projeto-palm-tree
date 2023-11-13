@@ -54,6 +54,7 @@ img{
 }
 .logo a {
     display: inline-flex;
+    
     padding: 6px;
     text-decoration: none;
     color: #ffffff;
@@ -250,6 +251,7 @@ h1 {
     padding-bottom: 40px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+    align-items: center;
 }
 
 .sobrenostxt{
