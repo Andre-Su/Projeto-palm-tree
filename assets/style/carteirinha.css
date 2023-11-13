@@ -121,7 +121,19 @@ h1 {
 }
 /* Destaque */
 #destaque{
-    display: flexbox;
+    display: flex;
+    margin: 10px;
+}
+#destaquetxt{
+    margin: 0 20px;
+    text-align: justify;
+}
+#destaqueimg{
+    display: inline-grid;
+    justify-items: center;
+}
+#dtimage{
+    border-radius: 20px;
 }
 
 /* Footer */
