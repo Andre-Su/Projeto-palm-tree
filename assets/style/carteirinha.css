@@ -22,18 +22,22 @@ small{
     font-weight: 400;
     font-size: smaller;
 }
+img{
+    border-radius: 5px;
+}
 
 /* Header */
 
 #masterheader {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: static;
-    align-items: center;
     background-color: rgb(0, 26, 36);
     padding-bottom: 20px;
     margin-bottom: 30px;
     top: 10px;
+    align-items: center;
+    flex-direction: row;
 }
 #masterheader div {
     position: relative;
@@ -49,6 +53,7 @@ small{
     align-self: center;
 }
 .logo a {
+    display: inline-flex;
     padding: 6px;
     text-decoration: none;
     color: #ffffff;
@@ -123,6 +128,7 @@ h1 {
 #destaque{
     display: flex;
     margin: 10px;
+    padding: 15px 20px;
 }
 #destaquetxt{
     margin: 0 20px;
@@ -134,6 +140,24 @@ h1 {
 }
 #dtimage{
     border-radius: 20px;
+}
+#solicitar:hover{
+    background-color: rgb(255, 166, 0);
+    color: #ffffff;
+    padding: 5px 14px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.8);
+    transition-duration: 300ms;
+}
+#solicitar{
+    margin: 5px;
+    background-color: rgb(228, 148, 0);
+    color: #dadada;
+    border: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition-duration: 200ms;
 }
 
 /* Footer */
