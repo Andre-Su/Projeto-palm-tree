@@ -1,31 +1,5 @@
 @charset "utf-8";
 
-body {
-    color: aliceblue;
-    background-color: #283d44;
-    font: 100% "Open Sans", Verdana, sans-serif;
-    cursor: default;
-}
-a {
-    text-decoration: none;
-    color: antiquewhite;
-    transition-duration: 100ms;
-}
-a:hover{
-    background: transparent;
-    padding: 2px;
-    color: rgb(255, 190, 105);
-    transition-duration: 100ms;
-    font-weight: bold;
-}
-small{
-    font-weight: 400;
-    font-size: smaller;
-}
-img{
-    border-radius: 10px;
-}
-
 /* Header */
 
 #masterheader {
@@ -296,16 +270,6 @@ h1 {
     aspect-ratio: auto,auto/auto;
 }
 
-#containerbarra{
-    background-color: #e6e6e6;
-}
-#barra{
-    background-color: #283d44;
-    height: 70px;
-    width: auto;
-    border-bottom-left-radius: 70px;
-    border-bottom-right-radius: 70px;
-}
 /* Como Ajudar */
 
 #comoajudar{
