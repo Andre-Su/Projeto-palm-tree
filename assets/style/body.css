@@ -11,16 +11,21 @@ a {
     color: antiquewhite;
     transition-duration: 100ms;
 }
+a:visited{
+    color: rgb(215, 234, 250);
+    font-weight: 550;
+    transition-duration: 100ms;
+}
 a:hover{
     background: transparent;
-    padding: 2px;
+    padding: 0 2px;
     color: rgb(255, 190, 105);
-    transition-duration: 100ms;
     font-weight: bold;
+    transition-duration: 100ms;
 }
 small{
     font-weight: 400;
-    font-size: smaller;
+    font-size: 0.8em;
 }
 img{
     border-radius: 10px;
@@ -28,5 +33,21 @@ img{
 h1 {
     color: rgb(221, 250, 250);
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2.3em;
+}h2 {
+    color: rgb(221, 250, 250);
+    font-weight: 650;
+    font-size: 2.15em;
+}h3 {
+    color: rgb(221, 250, 250);
+    font-weight: 600;
+    font-size: 2.06em;
+}h4 {
+    color: rgb(221, 250, 250);
+    font-weight: 550;
+    font-size: 2em;
+}
+p{
+    font-size: 1em;
+    font-weight: 400;
 }
