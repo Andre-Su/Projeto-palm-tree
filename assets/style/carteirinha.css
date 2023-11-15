@@ -14,13 +14,15 @@
 }
 #destaquetxt{
     float: left;
-    margin: 0 20px;
+    margin: auto, auto;
+    padding: 10px 20px;
+    width: 400px;
     text-align: justify;
 }
 #destaqueimg{
     float: right;
-    display: inline-grid;
-    justify-items: center;
+    margin: auto, auto;
+    padding: 10px 20px;
 }
 #dtimage{
     border-radius: 20px;
