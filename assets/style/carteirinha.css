@@ -10,19 +10,19 @@
 #destaque{
     display: flex;
     margin: 10px;
-    padding: 15px 20px;
+    padding: 15px 10px;
 }
 #destaquetxt{
     float: left;
     margin: auto, auto;
-    padding: 10px 20px;
+    padding: 10px 10px;
     width: 400px;
     text-align: justify;
 }
 #destaqueimg{
     float: right;
     margin: auto, auto;
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 #dtimage{
     border-radius: 20px;
@@ -58,6 +58,7 @@
 #etapas h2,#etapas h1{
     color: rgb(17, 17, 17);}
 #etapas h2{
+    margin-bottom: 5px;
     font-weight: 700;
     font-size: 30px;
 }
