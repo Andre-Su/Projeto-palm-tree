@@ -36,16 +36,20 @@ h1 {
     font-size: 2.3em;
 }h2 {
     color: rgb(221, 250, 250);
-    font-weight: 650;
+    font-weight: 700;
     font-size: 2.15em;
 }h3 {
     color: rgb(221, 250, 250);
-    font-weight: 600;
-    font-size: 2.06em;
+    font-weight: 650;
+    font-size: 2.0em;
 }h4 {
     color: rgb(221, 250, 250);
-    font-weight: 550;
-    font-size: 2em;
+    font-weight: 650;
+    font-size: 1.9em;
+}h5 {
+    color: rgb(221, 250, 250);
+    font-weight: 650;
+    font-size: 1.25em;
 }
 p{
     font-size: 1em;

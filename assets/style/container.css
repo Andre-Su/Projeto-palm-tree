@@ -23,6 +23,15 @@
     padding: 10px 10px;
     margin: auto;
 }
+.container-ft {
+    display: flex;
+    padding: 10px 10px;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 /* containers de barra*/
 
