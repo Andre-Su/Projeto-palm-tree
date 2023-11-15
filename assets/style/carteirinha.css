@@ -13,10 +13,12 @@
     padding: 15px 20px;
 }
 #destaquetxt{
+    float: left;
     margin: 0 20px;
     text-align: justify;
 }
 #destaqueimg{
+    float: right;
     display: inline-grid;
     justify-items: center;
 }
