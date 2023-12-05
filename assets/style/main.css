@@ -261,10 +261,7 @@
 /* Transparência */
 
 #transparencia{
-    display: grid;
     align-items: center;
-    padding: 30px;
-    margin: 50px;
     margin-bottom: 50px; 
 }
 .trptittle{
@@ -274,9 +271,7 @@
     margin: 30px;
 }
 .trpcontainer{
-    position: relative;
     margin: 0 auto;
-    display: flex   ;
 }
 .trpcaixa{
     background-color: #111a1d;
