@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/* Header */
+
+#masterheader {
+    display: flex;
+    justify-content: space-evenly;
+    position: static;
+    background-color: rgb(0, 26, 36);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    top: 10px;
+    align-items: center;
+    flex-direction: row;
+}
+#masterheader div {
+    position: relative;
+    float: right;
+}
+
+/* Logomarca */
+
+.logo{
+    margin-left: 5%;
+    margin-top: 45px;
+    float: left;
+    align-self: center;
+}
+.logo a {
+    display: inline-flex;
+    padding: 6px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Verdana;
+    font-weight: 600;
+    font-size: 1.8em;
+    transition-duration: 200ms;
+}
+.logo a:hover {
+    border-radius: 5px;
+    color:#ffd373;
+    transition-duration: 200ms;
+    padding: 6px 15px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Nav bar - links */
+
+.nav {
+    float: inline-end;
+    position: relative;
+    top: 7px;
+    right: 0;
+    margin-top: 45px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.nav li {
+    color:#ceebff;
+    width: max-content;
+    font-size: 1em;
+    padding: 0 25px 5px 3px;
+    float: left;
+}
+
+.nav li a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: inherit;
+}
+.nav li a:hover{
+    color:#ffffff;
+    font-weight: 540;
+    padding: 2px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
+}
+
+.nav li:first-child {
+    padding-left: 5px;
+}
+
+.nav li:last-child {
+    padding-right: 5px;
+}

@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+/* #Page */
+#page{
+    position: relative;
+
+    margin-bottom: 20px;
+}
+/* Destaque */
+#destaque{
+    margin: 5px;
+    padding: 15px 2px;
+}
+#destaquetxt{
+    float: left;
+    margin: auto, auto;
+    padding: 10px 5px;
+    width: 450px;
+    max-width: 60%;
+    text-align: justify;
+}
+#destaqueimg{
+    float: right;
+    width: 300px;
+    max-width: 60%;
+    margin: auto, auto;
+    padding: 10px 5px;
+}
+#dtimage{
+    border-radius: 20px;
+}
+#solicitar{
+    margin: 5px;
+    background-color: rgb(223, 145, 0);
+    color: #fffcef;
+    border: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition-duration: 200ms;
+}
+#solicitar:hover{
+    background-color: rgb(255, 166, 0);
+    color: #ffffff;
+    padding: 5px 14px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.8);
+    transition-duration: 300ms;
+}
+
+/* Seção Etapas */
+
+#etapas{
+    background-color: #e6e6e6;
+    color: rgb(20, 20, 20);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 40px 20px;
+}
+#etapas h2,#etapas h1{
+    color: rgb(17, 17, 17);}
+#etapas h2{
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 30px;
+}
+#etapas p{
+    color: rgb(44, 44, 44);
+    
+
+}
+
+/* Seção Duvidas */
+
+.duvidaPR{
+    background-color: #b4b4b4;
+    height: max-content;
+    padding: 8px;
+    margin: 0 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 8px rgba(65, 83, 97, 0.8)
+}
+
+.duvidaPR h5{
+    color: #1d505e;
+
+}
+.duvidaPR p{
+    color: #09171b;
+
+}
+
+/* Footer */
+
+footer{
+    background-color: #09171b;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.ftdiv{
+    padding: 10px;
+    margin-left: 40px;
+}
+
+
+#mapping{
+    padding: 10px;
+    margin-left: 40px;
+    margin-left: 50px;
+}
+#contato{
+    padding: 10px;
+    margin-left: 40px;
+}
+#copynote{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* Floats */
+
+.clearfix::before, .clearfix::after { content: ""; display: table; } 
+.clearfix::after{ clear: both;} 
+.clearfix{zoom: 1;}
+
